@@ -1,0 +1,570 @@
+
+*{  
+    margin: 0;
+    font-family: "Lora", serif;
+    font-family: "Signika Negative", sans-serif;
+}
+
+nav ul li a:hover {
+    color: orange !important;
+    background-color: #1f1e1e !important;
+    text-decoration: none;
+    transition: 0.5s !important;
+}
+
+nav ul li::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.bg-img-1{
+    background-image: url(images/slide1.png);
+}
+
+.bg-img-2{
+    background-image: url(images/slide2.png);
+}
+
+.bg-img-3{
+    background-image: url(images/slide4.png);
+}
+
+.carousel-image{
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 1.5s ease-in-out;
+}
+
+.carousel-image:hover{
+    filter: grayscale(0);
+}
+
+
+.carousel-caption{
+    color: rgb(255, 255, 255); 
+    font-size: 25px;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-caption h3 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 22px;
+}
+
+.carousel{
+    margin-top: 80px;
+    z-index: 9998;
+}
+
+.carousel img{
+    position:  center;
+}
+
+.navbar{
+    z-index: 9999;
+    margin: 0 -15px 0 -15px;
+    border-top: solid 5px #000;
+    border-bottom: solid 5px #000;
+}
+
+.navbar img{
+    margin-left: 15px;
+    padding: 15px 0 15px 0 ;
+    
+}
+
+.extra{
+    height: 90vh;
+}
+
+.curve {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    transform: scale(1, 1);
+}
+
+.curve:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 179px;
+    background-color: #212529;
+    right: 0;
+    top: -90px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
+}
+
+.curve2 {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    transform: scale(1, 1);
+}
+
+.curve2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 179px;
+    z-index: 9980;
+    background-color: #212529;
+    right: 0;
+    top: -63px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 53%, -1% 53%, 0% 100%)
+}
+
+.testimony{
+    height: 88vh;
+}
+
+.testimony h3{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.testi-item{
+    height: 390px;
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+swiper-container {
+    width: 80%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.testi-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi-state{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi-item h2{
+    padding: 10px;
+    transition: .5s;
+}
+
+.testi-item p{
+    color: #ccdae0;
+    transition: .5s;
+
+}
+
+swiper-slide img {
+    height: 300px;
+    padding: 20px;
+}
+
+.testi-item h2:hover,.testi-item p:hover{
+    color: #ffa500;
+}
+
+.contact{
+    margin-bottom: 35px;
+}
+
+.opt-item{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    padding: 8px;
+}
+
+.opt-item:hover{
+    font-size: 18px;
+    padding: 7px;
+    color: #ffa500;
+
+}
+
+.foot-item{
+    margin: 15px 0;
+}
+
+
+.foot-item h6{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.conMe{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #ffa500;
+    text-transform: uppercase;
+    color: #212529;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 20px;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.conMe::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #ffa500;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.conMe:hover{
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.conMe:hover::before {
+    transform: scaleY(0);
+}
+
+.conMe:hover::after {
+    transform: scaleX(0);
+}
+
+.conMe  span {
+    position: relative;
+    z-index: 9900;
+}
+  
+.conMe::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #ffa500;
+    transition: 0.5s ease-in-out;
+    transform: scalex(1);
+}
+
+.profile{
+    margin-top: 10vh;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+}
+
+.prof-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 500;
+    
+}
+
+.prof-item h1{
+    font-size: 60px;
+    margin: 5px 0 20px 0;
+    text-align: left;
+}
+
+.prof-item h2{
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.prof-item h3{
+    font-size: 20px;
+    color: orange;
+    margin: 0;
+    text-align: left;
+}
+
+.prof-item h4{
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.myprofpic{
+    align-self: center;
+    height: 85vh;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.bg1{
+    background-image: url(images/graph\ \(1\).png);
+    position: absolute;
+    width: 477px;
+    height: 387px;
+    background-repeat: no-repeat;
+    top: 100px;
+    right: 100px;
+    transform: rotate(219deg);
+    opacity: .4;
+}
+
+.bg2{
+    background-image: url(images/graphh\ \(1\).png);
+    position: absolute;
+    width: 477px;
+    height: 450px;
+    background-repeat: no-repeat;
+    top: 100px;
+    right: 100px;
+    transform: rotate(219deg);
+    opacity: .4;
+}
+.bgstring{
+    background-image: url(images/oooscillate.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.socMedIcon{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socMedIcon ul{
+    position: relative;
+    top: -70px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.socMedIcon ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+
+
+.socMedIcon ul li:nth-child(1) .fa-brands{
+    font-size: 35px;
+    margin: -3px 0 0 -3px;
+    line-height: 60px;
+    transition: 0.3s;
+    color: #ffa500;
+    padding: 0 18px;
+}
+.socMedIcon ul li:nth-child(2) .fa-brands{
+    font-size: 35px;
+    margin: -3px 0 0 -3px;
+    line-height: 60px;
+    transition: 0.3s;
+    color: #ffa500;
+    padding: 0 14px;
+}
+.socMedIcon ul li:nth-child(3) .fa-brands{
+    font-size: 35px;
+    margin: -3px 0 0 -3px;
+    line-height: 60px;
+    transition: 0.3s;
+    color: #ffa500;
+    padding: 0 15px;
+}
+.socMedIcon ul li:nth-child(4) .fa-brands{
+    font-size: 35px;
+    margin: -3px 0 0 -3px;
+    line-height: 60px;
+    transition: 0.3s;
+    color: #ffa500;
+    padding: 0 13px;
+}
+
+.socMedIcon ul li .fa-brands:hover{
+    color: #000;
+}
+.socMedIcon ul li:nth-child(2) .fa-brands:hover{
+    color: #000;
+}
+.socMedIcon ul li:nth-child(3) .fa-brands:hover{
+    color: #fff;
+}
+.socMedIcon ul li:nth-child(4) .fa-brands:hover{
+    color: #fff;
+}
+
+.socMedIcon ul li a{
+    position: relative;
+    display: block;
+    text-decoration:  none;
+    margin: 0;
+    color: #212529;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    border: 3px solid #ffa500;
+    background-color: #212529;
+    text-align: center;
+    transition: 0.5s;
+}
+.socMedIcon ul li:nth-child(1) a:hover{
+    border: none;
+    color: #fff;
+    background-color: #3b5998;
+    box-shadow: 0 5px 4px ##ffa50050;
+}
+.socMedIcon ul li:nth-child(2) a:hover{
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #00f2ea, #EE1D51);
+    box-shadow: 0 5px 4px #ffa50050;
+}
+.socMedIcon ul li:nth-child(3) a:hover{
+    border: none;
+    color: #fff;
+    background-image: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%);
+    box-shadow: 0 5px 4px #ffa50050;
+}
+.socMedIcon ul li:nth-child(4) a:hover{
+    border: none;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 5px 4px #ffa50050;
+}
+
+.socMedIcon ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+@media (max-width: 576px){
+    .opt-item{
+        font-size: 13px;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+    }
+    
+    .navbar-nav{
+        text-align: center !important;
+    }
+
+    .testimony h3{
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .testimony h4{
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .testi-state{
+    padding-bottom: 13px;
+    }
+    .prof-item img{
+        height: 60vh;
+        top: 0;
+    }
+    .socMedIcon ul li{
+        list-style: none;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-caption p {
+        font-size: 18px;
+    }
+
+    .opt-item{
+        font-size: 14px;
+    }
+    .prof-item img{
+        height: 60vh;
+        top: 0;
+    }
+    
+
+}
+
+@media (max-width: 992px){
+.prof-item h1{
+    font-size: 40px;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+
+.bg1, .bg2{
+    visibility: hidden;
+}
+
+.prof-item h2{
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+}
+.prof-item h3{
+    font-size: 15px;
+    color: orange;
+    text-align: center;
+}
+.prof-item h4{
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+}
+
+@media (max-width: 1200px){
+}
