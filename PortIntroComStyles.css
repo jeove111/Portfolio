@@ -413,6 +413,7 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 9999;
 }
 
 .accordion-item button{
