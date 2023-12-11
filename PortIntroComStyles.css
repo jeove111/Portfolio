@@ -50,6 +50,22 @@ nav ul li:hover::after {
 .carousel-image:hover{
     filter: grayscale(0);
 }
+.BossD{
+    position: relative;
+}
+
+.BossD::before{
+    content: "";
+    margin: 0 10px;
+    position: absolute;
+    top: 0%;
+    left: -5%;
+    width: 98%;
+    height: 100%;
+    background-color: #ffa50090;
+    transform: rotate(-1deg);
+    border-radius: 5px;
+}
 
 .carousel-control-prev span{
     background-color: #ffa500;
@@ -439,6 +455,7 @@ swiper-slide img {
     display: flex;
     align-items: center;
     height: 90vh;
+    position: relative;
 }
 .about .accordion span, .orange{
     color: #ffa500;
@@ -489,6 +506,7 @@ swiper-slide img {
     transform: rotate(219deg);
     opacity: .4;
 }
+
 .bgstring{
     background-image: url(images/oooscillate.png);
     background-repeat: no-repeat;
@@ -796,7 +814,7 @@ swiper-slide img {
     position: absolute;
     top: 0%;
     left: -1%;
-    width: 98%;
+    width: 96%;
     height: 100%;
     background-color: #21252920;
     transform: rotate(-1deg);
@@ -809,7 +827,7 @@ swiper-slide img {
     position: absolute;
     top: 0%;
     left: -1%;
-    width: 98%;
+    width: 96%;
     height: 100%;
     border: 2px solid #ffa50050;
     transform: rotate(-4deg);
@@ -1021,7 +1039,7 @@ swiper-slide img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: 100%;
     background-color: #ffffff;
     transform: rotate(-1deg);
@@ -1034,7 +1052,7 @@ swiper-slide img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     transform: rotate(-4deg);
     border: 2px solid #ffa500;;
